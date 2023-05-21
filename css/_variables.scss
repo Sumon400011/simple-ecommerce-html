@@ -1,0 +1,187 @@
+$font-family: 'Inter', sans-serif;
+
+
+// Heading Font Sizes
+$heading-1: 60px;
+$heading-2: 48px;
+$heading-3: 36px;
+$heading-4: 30px;
+$heading-5: 24px;
+$heading-6: 20px;
+$body-text: 16px;
+
+// Heading Line Heights
+$heading-1-line-height: 70px;
+$heading-2-line-height: 52px;
+$heading-3-line-height: 48px;
+$heading-4-line-height: 40px;
+$heading-5-line-height: 34px;
+$heading-6-line-height: 30px;
+$body-text-line-height: 24px;
+
+// Font weights
+$fw-100: 100;
+$fw-200: 200;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+$fw-800: 800;
+$fw-900: 900;
+
+
+// Colors =============
+
+// Primary colors
+$primary-900: #1A237E;
+$primary-800: #283593;
+$primary-700: #303F9F;
+$primary-50: #E8EAF6;
+
+// Secondary colors
+$secondary-900: #4C1D95;
+$secondary-800: #5B21B6;
+$secondary-700: #6D28D9;
+$secondary-50: #F5F3FF;
+
+
+// Success colors
+$success-900: #1B5E20;
+$success-800: #2E7D32;
+$success-700: #388E3C;
+$success-50: #E8F5E9;
+
+
+// Info colors
+$info-900: #006064;
+$info-800: #00838F;
+$info-700: #0097A7;
+$info-50: #E0F7FA;
+
+
+// Warning colors
+$warning-900: #FF6F00;
+$warning-800: #FF8F00;
+$warning-700: #FFA000;
+$warning-50: #FFFDE7;
+
+
+// Danger colors
+$danger-900: #B71C1C;
+$danger-800: #C62828;
+$danger-700: #D32F2F;
+$danger-50: #FFEBEE;
+
+
+// Gray colors
+$gray-900: #212121;
+$gray-800: #424242;
+$gray-700: #616161;
+$gray-600: #757575;
+$gray-500: #9E9E9E;
+$gray-400: #BDBDBD;
+$gray-300: #E0E0E0;
+$gray-200: #EEEEEE;
+$gray-100: #F5F5F5;
+$gray-50: #FAFAFA;
+
+
+// Radius
+$radius-none: 0px;
+$radius-xs: 2px;
+$radius-sm: 4px;
+$radius: 8px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+$radius-xxl: 20px;
+$radius-rounded: 9999px;
+
+
+//Spacers
+
+$spacers: (
+"8":8,
+"16":16,
+"24":24,
+"32":32,
+"40":40,
+"56":56,
+"72":72,
+"80":80,
+"96":96,
+"12":120
+)
+
+
+
+
+
+
+
+
+
+// Spacing =========================
+// @mixin padding-classes($size-name, $space){
+//     @if $size-name == ''{
+//         .p-#{$space} {padding: #{$space}}
+//         .pt-#{$space} {padding-top: #{$space}}
+//         .pb-#{$space} {padding-bottom: #{$space}}
+//         .pl-#{$space} {padding-left: #{$space}}
+//         .pr-#{$space} {padding-right: #{$space}}
+//         .px-#{$space} {padding-left: #{$space}; padding-right: #{$space}}
+//         .py-#{$space} {padding-top: #{$space}; padding-bottom: #{$space}}
+
+//         // margin
+//         .m-#{$space} {margin: #{$space}}
+//         .mt-#{$space} {margin-top: #{$space}}
+//         .mb-#{$space} {margin-bottom: #{$space}}
+//         .ml-#{$space} {margin-left: #{$space}}
+//         .mr-#{$space} {margin-right: #{$space}}
+//         .mx-#{$space} {margin-left: #{$space}; margin-right: #{$space}}
+//         .my-#{$space} {margin-top: #{$space}; margin-bottom: #{$space}}
+//     }@else{
+//         // padding
+//         .p-#{$size-name}-#{$space} {padding: #{$space}}
+//         .pt-#{$size-name}-#{$space} {padding-top: #{$space}}
+//         .pb-#{$size-name}-#{$space} {padding-bottom: #{$space}}
+//         .pl-#{$size-name}-#{$space} {padding-left: #{$space}}
+//         .pr-#{$size-name}-#{$space} {padding-right: #{$space}}
+//         .px-#{$size-name}-#{$space} {padding-left: #{$space}; padding-right: #{$space}}
+//         .py-#{$size-name}-#{$space} {padding-top: #{$space}; padding-bottom: #{$space}}
+
+//         // margin
+//         .m-#{$size-name}-#{$space} {margin: #{$space}}
+//         .mt-#{$size-name}-#{$space} {margin-top: #{$space}}
+//         .mb-#{$size-name}-#{$space} {margin-bottom: #{$space}}
+//         .ml-#{$size-name}-#{$space} {margin-left: #{$space}}
+//         .mr-#{$size-name}-#{$space} {margin-right: #{$space}}
+//         .mx-#{$size-name}-#{$space} {margin-left: #{$space}; margin-right: #{$space}}
+//         .my-#{$size-name}-#{$space} {margin-top: #{$space}; margin-bottom: #{$space}}
+//     }
+    
+// }
+
+/* ==== Spacing ==== */
+// @each $space in $spacers{
+//     @media (min-width: 0px) {
+//         @include padding-classes('', $space);
+//     }
+//     @media (min-width: ($breakpoint-575 + 1) ) {
+//         @include padding-classes(sm, $space);
+//     }
+//     @media (min-width: $breakpoint-768) {
+//         @include padding-classes(md, $space);
+//     }
+//     @media (min-width: ($breakpoint-991 + 1) ) {
+//         @include padding-classes(lg, $space);
+//     }
+//     @media (min-width: $breakpoint-1024) {
+//         @include padding-classes(xl, $space);
+//     }
+//     @media (min-width: $breakpoint-1440) {
+//         @include padding-classes(xxl, $space);
+//     }
+// }
+
+// Spacing End =========================

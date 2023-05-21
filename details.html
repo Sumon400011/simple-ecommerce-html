@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomm Template | Details Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css"/>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <section>
+        <div class="top-bar bgc-primary-900">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 py-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-white mb-0">Welcome to onlinee store!</p>
+                            <div class="link-group d-flex">
+                                <a href="" class="d-inline-block txt-link mx-1 text-white">Login</a> <span class="text-white mx-2">|</span> <a href=""
+                                    class="d-inline-block txt-link mx-1 text-white">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-section">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" alt="" class="img-fluid brand">
+                    </a>
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    
+                    <form class="d-flex mx-auto" style="max-width: 450px; width: 100%;">
+                        <div class="input-group mb-0" >
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                            <!-- <button class="button button-outline-primary input-group-text" type="submit">Search</button> -->
+                            <button class="button button-icon-only button-primary input-group-text px-3" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                        <ul class="list-unstyled d-flex ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1212 6H17.0001C17.0001 3.23858 14.7615 1 12.0001 1C9.23865 1 7.00008 3.23858 7.00008 6H4.87898C3.82286 6 2.94876 6.82118 2.88288 7.87525L2.13288 19.8752C2.06092 21.0266 2.97534 22 4.12898 22H19.8712C21.0248 22 21.9392 21.0266 21.8673 19.8752L21.1173 7.87524C21.0514 6.82117 20.1773 6 19.1212 6ZM7.00008 8H4.87898L4.12898 20L19.8712 20L19.1212 8H17.0001V11C17.0001 11.5523 16.5524 12 16.0001 12C15.4478 12 15.0001 11.5523 15.0001 11V8H9.00008V11C9.00008 11.5523 8.55236 12 8.00008 12C7.44779 12 7.00008 11.5523 7.00008 11V8ZM12.0001 3C13.6569 3 15.0001 4.34315 15.0001 6H9.00008C9.00008 4.34315 10.3432 3 12.0001 3Z" fill="black"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="nav-item p-2">
+                                <a class="nav-link" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13.5C13.933 13.5 15.5 11.933 15.5 10C15.5 8.067 13.933 6.5 12 6.5C10.067 6.5 8.5 8.067 8.5 10C8.5 11.933 10.067 13.5 12 13.5ZM12 11.5C12.8284 11.5 13.5 10.8284 13.5 10C13.5 9.17157 12.8284 8.5 12 8.5C11.1716 8.5 10.5 9.17157 10.5 10C10.5 10.8284 11.1716 11.5 12 11.5Z" fill="black"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2112 20.5365C20.0833 18.7794 22 15.6136 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.4815 2.90389 16.752 4.4004 18.5C4.40041 18.5 4.4004 18.5 4.4004 18.5C4.77735 18.9403 5.1919 19.3474 5.63907 19.7165C7.36766 21.143 9.58376 22 12 22C13.9093 22 15.6936 21.4649 17.2112 20.5365ZM18.1513 17.1152C19.3057 15.7285 20 13.9453 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 13.9453 4.69434 15.7285 5.84871 17.1152C7.54517 15.7898 9.68034 15 12 15C14.3196 15 16.4548 15.7898 18.1513 17.1152ZM16.665 18.4998C15.3511 17.5548 13.7409 17 12 17C10.2591 17 8.64889 17.5548 7.33501 18.4998C8.57009 19.3878 10.0686 19.9325 11.6908 19.9941C11.7934 19.998 11.8964 20 12 20C12.1208 20 12.241 19.9973 12.3605 19.992C13.963 19.921 15.4429 19.3785 16.665 18.4998Z" fill="black"/>
+                                    </svg> 
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    <!-- </div> -->
+                </div>
+            </nav>
+        </div>
+
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <div class="collapse navbar-collapse">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item all-category-nav-item">
+                                <a class="button button-right-icon active all-category-nav-link" href="#">
+                                    All Categories 
+                                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="ms-2">
+                                        <line y1="1" x2="13.75" y2="1" stroke="white" stroke-width="2"/>
+                                        <line y1="6.5" x2="13.75" y2="6.5" stroke="white" stroke-width="2"/>
+                                        <line x1="6.875" y1="12" x2="13.75" y2="12" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                                <ul class="list-unstyled list-group all-category-mega-menu bg-white shadow-lg position-absolute">
+                                    <li class="list-group-item px-0 py-3">
+                                        <!-- mega menu -->
+                                        <div class="container ">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="mega-menu">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laudantium cupiditate similique voluptas laborum, atque iste perspiciatis dolor repudiandae, natus doloribus nemo neque quo nulla possimus asperiores quibusdam! Pariatur, quidem.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="button" href="/index.html">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="button" href="/products.html">
+                                    Products
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="button" href="#">
+                                    HOT OFFERS
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="button" href="/category.html">
+                                    CATEGORIES
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- mega menu -->
+            <!-- <div class="container all-category-mega-menu">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mega-menu all-category bg-white shadow-lg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- /navigation -->
+
+
+    <!-- details -->
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-5"></div>
+                <div class="col-lg-5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /details -->
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div>
+
+        </div>
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-12 col-lg-4">
+                    <div class="text-module">
+                        <img src="" alt="" class="footer-logo img-fluid">
+                        <p>Get Connected with us on social networks Get Connected with us on social networks:</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="text-module">
+                        <div class="text-module">
+                            <h6 class="footer-title">USEFULL LINKS</h6>
+                            <ul class="footer-links">
+                                <li>Home</li>
+                                <li>Mens</li>
+                                <li>Womens</li>
+                                <li>Shop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-2">
+                    <div class="text-module">
+                        <h6 class="footer-title">FOLLOW US</h6>
+                        <ul class="footer-links">
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Linkedin</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="text-module">
+                        <h6 class="footer-title">CONTACT</h6>
+                        <p>Get Connected with us on social networks Get Connected with us on social networks:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+
+
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.header-carousel').slick({
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplaySpeed: 4000,
+                // variableWidth: true,
+                // dots: true,
+                infinite: true,
+                speed: 1000,
+                // fade: true,
+                // arrows: true,
+                cssEase: 'ease',
+                // adaptiveHeight: true,
+                autoplay: true,
+                focusOnSelect: true,
+                // asNavFor: '.slider-nav'
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!-- <script type="text/javascript">
+    $(document).ready(function(){
+        $('.header-carousel').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            lazyLoad: 'ondemand',
+            autoplaySpeed: 2000,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            cssEase: 'linear',
+            fade: true,
+            arrows: true,
+            responsive: [
+                {
+                breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                breakpoint: 575,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '20px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script> -->

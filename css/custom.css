@@ -1,0 +1,236 @@
+/* ======= header ======== */
+.top-bar p,
+.top-bar a{
+    font-size: 14px;
+}
+
+.brand{
+    max-width: 150px;
+}
+
+.main-menu .navbar{
+    background-color: var(--gray-200)!important;
+}
+.main-menu .navbar .nav-item .button{
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--gray-900);
+}
+.main-menu .navbar .nav-item .button.active{
+    color: white;
+    background-color: var(--primary-900);
+}
+.main-menu .navbar .nav-item .button:hover{
+    color: white;
+    background-color: var(--primary-700);
+}
+
+
+/* .all-category-nav-item{
+    position: relative;
+} */
+.mega-menu{
+    /* position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto; */
+    height: 200px;
+    width: 100%;
+}
+
+/* .all-category-btn{
+
+} */
+
+.all-category-nav-item:hover .all-category-mega-menu{
+    display: block;
+}
+.all-category-mega-menu{
+    display: none;
+    top: 40px;
+    border-radius: 0;
+}
+/* ======= /header ======== */
+
+
+
+/* Banner */
+#banner{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#banner .text-module p{
+    color: var(--gray-600);
+}
+.slick-slide{
+    transition: 0.20s;
+}
+.slick-slide:not(.slick-center){
+    transform: scale(0.92);
+    transition: 0.20s;
+}
+.header-carousel img{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.slick-track{
+    margin-bottom: 30px;
+}
+/* /Banner */
+
+
+
+
+/* Browse Categories */
+
+#browse-categories{
+    background-color: #FAFAFA;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#browse-categories .browse-img{
+    height: 110px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#browse-categories .card{
+    margin-bottom: 30px!important;
+    border: 0px;
+}
+
+#browse-categories .card .card-title{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--gray-700);
+    font-weight: var(--fw-600-semibold);
+}
+#browse-categories .card a{
+    font-size: 13px;
+    color: var(--gray-500);
+}
+/* /Browse Categories */
+
+
+
+
+/* Menz */
+#menz{
+    background-color: #ffffff;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#menz .card{
+    margin-bottom: 30px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* /Menz */
+
+
+/* menz-related */
+#menz-related .card{
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#menz-related .row > div:nth-child(2) .card{
+    background-color: #FDE8E6;
+}
+
+#menz-related .row > div:nth-child(1) .card{
+    background-color: var(--secondary-50);
+}
+/* /menz-related */
+
+
+
+
+/* womenz */
+#womenz{
+    background-color: #ffffff;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#womenz .card{
+    margin-bottom: 30px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* /womenz */
+
+
+
+/* womenz-related */
+#womenz-related .card{
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#womenz-related .row > div:nth-child(1) .card{
+    background-color: #FDE8E6;
+}
+
+#womenz-related .row > div:nth-child(2) .card{
+    background-color: var(--secondary-50);
+}
+/* /womenz-related */
+
+
+
+#footer{
+    background-color: var(--gray-900);
+    margin-top: 90px;
+}
+
+#footer .footer-title,
+#footer ul li,
+#footer p{
+    color: white;
+}
+#footer ul li,
+#footer p{
+    font-size: 14px;
+}
+
+
+
+#footer .footer-title{
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#footer .text-module p{
+    line-height: 24px;
+    max-width: 310px;
+}
+#footer ul{
+    padding: 0px;
+    list-style: none;
+}
+#footer ul li{
+    margin-bottom: 12px;
+}
+
+
+
+/* =========== category page =========== */
+.section-padding{
+    margin-top:72px;
+}
+
+.product-card img{
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.product-card button{
+    color: #666666;
+}
+/* =========== category page =========== */
